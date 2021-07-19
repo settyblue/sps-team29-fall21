@@ -14,25 +14,22 @@ import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 
 /** Servlet responsible for creating new tasks. */
-@WebServlet("/new-analysis")
+@WebServlet("/new-company")
 public class NewTaskServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     // Sanitize user input to remove HTML tags and JavaScript.
-    String title = Jsoup.clean(request.getParameter("title"), Whitelist.none());
+    String company = Jsoup.clean(request.getParameter("company"), Whitelist.none());
     long timestamp = System.currentTimeMillis();
-    //Add day!
-    //Add Rating/grade
+    
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Analysis");
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Company");
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
-            .set("title", title) //name of company
-            .set("day", day)
+            .set("company", company) //name of company
             .set("timestamp", timestamp)
-            .set("rating", rating)
             .build();
     datastore.put(taskEntity);
 
