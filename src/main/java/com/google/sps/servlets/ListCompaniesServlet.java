@@ -36,26 +36,25 @@ public class ListCompaniesServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    // Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    // Query<Entity> query =
-    //     Query.newEntityQueryBuilder().setKind("Company").build();
-    // QueryResults<Entity> results = datastore.run(query);
+    Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+    Query<Entity> query =
+        Query.newEntityQueryBuilder().setKind("Company").build();
+    QueryResults<Entity> results = datastore.run(query);
 
-    // List<Company> companies = new ArrayList<>();
-    // while (results.hasNext()) {
-    //   Entity entity = results.next();
+    List<Company> companies = new ArrayList<>();
+    while (results.hasNext()) {
+      Entity entity = results.next();
 
-    //   long id = entity.getKey().getId();
-    //   String title = entity.getString("title");
+      long id = entity.getKey().getId();
+      String title = entity.getString("title");
 
-    //   Company company = new Company(title);
-    //   companies.add(company);
-    // }
+      Company company = new Company(title);
+      companies.add(company);
+    }
 
-    // Gson gson = new Gson();
+    Gson gson = new Gson();
 
-    // response.setContentType("application/json;");
-    // response.getWriter().println(gson.toJson(companies));
-    response.sendRedirect("/list-companies.html");
+    response.setContentType("application/json;");
+    response.getWriter().println(gson.toJson(companies));
   }
 }
