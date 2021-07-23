@@ -14,18 +14,18 @@
 
 package main.java.com.google.sps.data;
 
+import java.sql.Date;
+
 /** An item on a todo list. */
 public final class Score {
 
   private final String name;
-  private final long date;
-  private final long timestamp;
   private final double score;
+  private final Date date;
 
-  public Score(String name, long date, long timestamp, double score) {
+  public Score(String name, double score, Date date) {
     this.name = name;
-    this.date = date;
-    this.timestamp = timestamp;
     this.score = score;
+    this.date = date;
   }
 }
