@@ -12,19 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main.java.com.google.sps.data;
-
-import java.sql.Date;
-
-/** An item on a todo list. */
-public final class Score {
-  private final String name;
-  private final double score;
-  private final String date;
-
-  public Score(String name, double score, String date) {
-    this.name = name;
-    this.score = score;
-    this.date = date;
+/** Fetches tasks from the server and adds them to the DOM. */
+function loadScores() {
+    fetch('/list-companies').then(response => response.json()).then((companies) => {
+      companies.forEach((company) => {
+        // Add score
+      })
+    });
   }
-}

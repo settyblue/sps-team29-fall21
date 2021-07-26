@@ -1,0 +1,6 @@
+/home/ricardolimasuarez1/sps-team29-summer2021/src/main/java/com/google/sps/ServerMain.java
+/home/ricardolimasuarez1/sps-team29-summer2021/src/main/java/com/google/sps/servlets/HelloWorldServlet.java
+/home/ricardolimasuarez1/sps-team29-summer2021/src/main/java/com/google/sps/servlets/AddCompanyServlet.java
+/home/ricardolimasuarez1/sps-team29-summer2021/src/main/java/com/google/sps/data/Company.java
+/home/ricardolimasuarez1/sps-team29-summer2021/src/main/java/com/google/sps/data/Score.java
+/home/ricardolimasuarez1/sps-team29-summer2021/src/main/java/com/google/sps/servlets/ListCompaniesServlet.java

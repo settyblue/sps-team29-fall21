@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Add New Company</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body onload="loadCompanies()">
+    <h1>Company List</h1>
+
+    <form method="POST" action="/add-company">
+      <input type="text" name="title" />
+      <br/>
+      <button>Submit</button>
+    </form>
+
+    <hr/>
+
+    <ul id="company-list"></ul>
+
+  </body>
+</html>
