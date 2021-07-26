@@ -18,7 +18,6 @@ import java.sql.Date;
 
 /** An item on a todo list. */
 public final class Score {
-
   private final String name;
   private final double score;
   private final String date;
