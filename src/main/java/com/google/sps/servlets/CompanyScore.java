@@ -14,6 +14,7 @@
 
 package main.java.com.google.sps.servlets;
 
+import com.google.cloud.Date;
 import com.google.cloud.datastore.Datastore;
 import com.google.cloud.datastore.DatastoreOptions;
 import com.google.cloud.datastore.Entity;
@@ -21,36 +22,44 @@ import com.google.cloud.datastore.Query;
 import com.google.cloud.datastore.QueryResults;
 import com.google.cloud.datastore.StructuredQuery.OrderBy;
 import com.google.gson.Gson;
+
+import org.aspectj.weaver.patterns.IScope;
+
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import main.java.com.google.sps.data.Company;
-
+import main.java.com.google.sps.data.Score;
 
 /** Servlet responsible for listing companies. */
-@WebServlet("/list-companies")
-public class ListCompaniesServlet extends HttpServlet {
+@WebServlet("/companies-score")
+public class CompanyScore extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     Query<Entity> query =
-        Query.newEntityQueryBuilder().setKind("Company").build();
+        Query.newEntityQueryBuilder().setKind("Score").build();
     QueryResults<Entity> results = datastore.run(query);
 
-    List<Company> companies = new ArrayList<>();
+    List<Score> scores = new ArrayList<>();
     while (results.hasNext()) {
       Entity entity = results.next();
 
-      long id = entity.getKey().getId();
-      String title = entity.getString("title");
+      String name = entity.getString("name");
+      double new_score = entity.getDouble("score");
+      String date = entity.getString("date");
 
-      Company company = new Company(title);
-      companies.add(company);
+      Score score = new Score(name,date,new_score);
+      scores.add(score);
     }
 
     Gson gson = new Gson();
