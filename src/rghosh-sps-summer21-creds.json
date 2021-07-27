@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rghosh-sps-summer21",
+  "private_key_id": "c6e467f26531c1d85d12c90a8d2da8652322a451",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCoSqJJl0gn1vyd\n1K8q5xy0rw7CN1XYg7kXpdX+83zFqOH5jypTYkXx6k49OFdhmTqeAfPZpYZi+WBG\n0oZuGl/ozsUtjI/vIo2+sCggoGSeo4AZhbb5xTBF/CcSORGJpmgm8l1M44hkc+Cd\nfx4Ouo65Mj0/Ma/WEgwImXXad7gx7LGJyZY7e+65aYEMIQY2f0o2Mhlh3ztMWb+f\n6Ql/WDoBynGRyL0Seb64ubvmH0A2uVOgjKY+C6iJmPTTzDLP+fWx9gY8fkhw2QuQ\nynUzJBw/Q7xcRPoD6QzKepWZCH0chw1ndmCmIjg/LGb340TX6TAEDCas3pZuCo5r\nvCIqItiJAgMBAAECggEAAJgn4n2RaeDwtOApC2Ge0zVe5oPHxAtIt8XJtPwYPmyi\nOgLd40bAnhIQkJcz+XfPMlA/M69Jw4HONl3SD0489Q9oOJ5AwrdTERT3RVCPs77l\nKfc+uNCFQxVY2s/UXnw1wrUegXyjEQ4W4V4vMDM2ORRNd/1KzyVH69lakP4/1Smi\nJ8dOPUr1aYzcav2rxSqK9dBl7AJ6WZEDsqafBNPr1OnbAaW6WlQM5o3Bjw0UQ3Wk\n3zhJyPpYy0EZ2NusYYrjJvPBJ8qkerc66kqaBRi7AUTfOgoAyYDIWTxitx8ngFz2\n3+GCtueq4LZpBEzmXB35z37dldsaSVvV1qFIlOPFIQKBgQDphe1sVBvHuIW5yHjJ\nCmH24xW+zcHMc8zNSX+Ymr7XYuc+uh94vufPGbjHfw6VwzO+yYjDnGcUDkTMc5N0\nQeE6k+2lgfhlZk2ow/c7V9pFgrX0BD+O6yvvyqEiussZx7PBnex7r+0yfLo9P9iu\nFZIU78JlXbpxl1EznV44rM1N6QKBgQC4fWHV1CtvZH+3wmI5Y593hWhRGE3ij7Pf\nTlznEHIhCm0gUDCSMXt4VMW/8O+ZCNiU8cBdqNMOIBryXShN3q2lOGd4OhQI5Ssn\nmoc181ga2aGOvoki1EWkSIrWFIiN2SBFXknemnHo/0gcTkb3hKFhzf+nWVkrAr0B\n/kxZpvlxoQKBgBNxzGg1xK5npfLnR29uBuQ42mmt1lJA3i/Fy/MYB4YFvT2S3+X8\n925eNO2fncZIn7lmLJYlIswfuAjSItgOWEO5Z5NddCJ1V0gTMTXmxcz96kqsQ+KR\noHHyDGLI7Ppzj3syvCs8ZeLLUfKhq1grgaNup2ArYsfskp1aoCrV8K5pAoGAY1qy\nu5M9qQm4dl/qwflSwe1IlpO+Lgsx1UrAYXfL3ttclZBZ+AFJ+y28KXg5sHLBIMVo\n0Ye/0dWcbXWZ5QXNAjN0FZ1BeODh8rwXoQhiJGOby+H0vJsQvj6K9musdqe95121\n7nnCarZAQW4ubdIxjxh/W8KUcMNSwqYOvCFeKMECgYAGJOAoWVyWdfTceYSTvf3d\n0Vx377mRLhMEnKZY6/29f9hvMClwNg5Eq508Enx4ivGIu/162ZyM2wqUtn+j9Lvx\nxGiM3/wBqCv0LcXZt7CW8LtsKXLGIsAbq3i7fNRPz4U4SKPixH9Hz2EybJfO4lsM\nfS7nzU1qR2FY79CRppwahA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "sentiment-analyzer@rghosh-sps-summer21.iam.gserviceaccount.com",
+  "client_id": "109391892012645833643",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sentiment-analyzer%40rghosh-sps-summer21.iam.gserviceaccount.com"
+}
